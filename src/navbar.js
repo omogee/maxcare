@@ -10,6 +10,7 @@ function App() {
     const [viewid, setviewid] = useState(-1)
     const [displaynav, setdisplaynav] = useState(false)
     const [iconclass, seticonclass] = useState("fa fa-bars")
+    const [displaysearch, setdisplaysearch] = useState(false)
 
 
     const hoverlink =(data)=>{
@@ -27,14 +28,16 @@ function App() {
     <div className="mt-3" onMouseOver={()=>hoverlink(navlink.id)}  style={{width:"20%",marginTop:"50px",textTransform:"uppercase",fontWeight:"bold",fontSize:"15px",cursor:"pointer"}}><p className="nav_link" style={{color:`${viewid === navlink.id ? "indianred" : "black"}`}}>{navlink.link}<small><span className={viewid === navlink.id ? "fa fa-chevron-up ml-1" : "fa fa-chevron-down ml-1"} style={{color:"grey",fontSize:"11px"}}></span></small></p></div>
         )}
          <div style={{width:'13%',padding:"0px 5px"}}><button style={{width:"100%",padding:"5px 7px",border:"none",borderRadius:"0",fontWeight:"bolder",color:"white",backgroundColor:"indianred",textTransform:"uppercase"}}><small><b>Donate</b></small></button></div>
-         <div style={{width:'10%',padding:"10px"}}><span className="fa fa-search"></span></div>
+         <div style={{width:'10%',padding:"10px"}}><span onClick={()=> setdisplaysearch(prev=> !prev)} className="fa fa-search"></span></div>
     </div>
     <div className="nav_bar" style={{width:"20%",padding:"5px",justifyItems:"center",alignItems:"center"}}>
     <span onClick={()=>{ setdisplaynav(prev => !prev);seticonclass(iconclass === "fa fa-bars" ? "fa fa-times" : "fa fa-bars")}} className={`${iconclass}`} style={{fontSize:"30px",float:"right",padding:"3px",border:"1px solid lightgrey"}}></span>
 </div>
 </div>
 <div style={{position:"relative"}}>
+    {displaysearch ?
     <input type="text" placeholder="Search...." style={{position:"absolute",boxshadow:"none",padding:"6.3px",border:"none",borderBottom:"1px solid lightgrey",right:"0px",width:"500px"}} />
+: null }
 </div>
 <div style={{position:"relative"}}>
 <div style={{width:"100%",position:"absolute",width:"100%",backgroundColor:"#006bb3",borderBottom:"1px solid lightgrey",padding:"0px",margin:"0px",color:"black"}}>

@@ -235,7 +235,7 @@ const setmodal =(e)=>{
     </div>
       <div className='container'>
         <div className='row lg_padding'>
-            <div className='col-12 col-md-6'>
+            <div className='col-12 col-md-6 readmorediv_1'>
                 <div className='row'>
                     <div className='col-12'>
                     <div className='observeX' style={{position:"relative",transform:"translateX(-70%)",opacity:"0",transition:"all linear 2s"}}>
@@ -248,18 +248,25 @@ const setmodal =(e)=>{
                      </div>
                      <div className='observeY' style={{transform:"translateY(-70%)",opacity:"0",transition:"all linear 2s"}}>
                       <p style={{fontSize:"25px",color:"orange",fontWeight:"bold",padding:"10px",textTransform:"uppercase"}}>What We Have Achieved...</p>
-                    <p >As a result of monthly donations and giving, Max Care Foundation has achieved a lot through the support of donors. Through the support of donors who have committed to monthly donations and giving, Max Care Foundation has been able to make a significant impact in the lives of vulnerable children and widows. By working together, we can continue to support organizations like Max Care Foundation and make a positive difference in the world. Max Care Foundation has provided educational support to vulnerable children and orphans, ensuring that they have access to quality education, provision of food and nutritional support to widows and vulnerable children, ensuring that they have access to healthy and nutritious meals. This has helped to reduce hunger and malnutrition, thereby improving their health and well-being. Every bit of donations contribute immensely towards achieving these goals.
+                    <p >As a result of monthly donations and giving, Max Care Foundation has achieved a lot through the support of donors. Through the support of donors who have committed to monthly donations and giving, Max Care Foundation has been able to make a significant impact in the lives of vulnerable children and widows. 
+                        <p style={{display:"none"}}>By working together, we can continue to support organizations like Max Care Foundation and make a positive difference in the world. Max Care Foundation has provided educational support to vulnerable children and orphans, ensuring that they have access to quality education, provision of food and nutritional support to widows and vulnerable children, ensuring that they have access to healthy and nutritious meals. This has helped to reduce hunger and malnutrition, thereby improving their health and well-being. Every bit of donations contribute immensely towards achieving these goals.
                          hunger. Each dollar of your gift will provide food and life essentials for
                          vulnerable children and families every month of the year.
                          Monthly giving is the most effective and efficient way to partner in the fight against
                          hunger. Each dollar of your gift will provide food and life essentials for
-                         vulnerable children and families every month of the year.
-                         <span className='ml-2 btn' style={{padding:"0px 2px",fontWeight:"bold",fontSize:"11px",cursor:"pointer",color:"white",backgroundColor:"orange",borderRadius:"5px"}}>read more ...</span></p>
+                         vulnerable children and families every month of the year.</p>
+                        </p>
+                        <center>
+                         <button className="btn btn_size readmore_btn_1">
+                            Read More
+                         </button>
+                         </center>
+                         <br/><br/>
                    </div>
                     </div>
                 </div>
             </div>
-            <div className='col-12 col-md-6'>
+            <div className='col-12 col-md-6 readmorediv_2'>
                 <div className='row'>
                     <div className='col-12'>
                         <div className='observeX' style={{position:"relative",transform:"translateX(70%)",opacity:"0",transition:"all linear 2s"}}>
@@ -272,7 +279,15 @@ const setmodal =(e)=>{
                         </div>
                         <div className='observeY' style={{transform:"translateY(-70%)",opacity:"0",transition:"all linear 2s"}}>
                         <p style={{fontSize:"25px",color:"orange",padding:"10px",textTransform:"uppercase",fontWeight:"bold"}}>What keeps us going</p>
-                    <p>As a result of monthly donations and giving, Max Care Foundation has achieved a lot through the support of donors. Through the support of donors who have committed to monthly donations and giving, Max Care Foundation has been able to make a significant impact in the lives of vulnerable children and widows. By working together, we can continue to support organizations like Max Care Foundation and make a positive difference in the world. Max Care Foundation has provided educational support to vulnerable children and orphans, ensuring that they have access to quality education, provision of food and nutritional support to widows and vulnerable children, ensuring that they have access to healthy and nutritious meals. This has helped to reduce hunger and malnutrition, thereby improving their health and well-being. Every bit of donations contribute immensely towards achieving these goals. </p>
+                    <p>As a result of monthly donations and giving, Max Care Foundation has achieved a lot through the support of donors. Through the support of donors who have committed to monthly donations and giving, Max Care Foundation has been able to make a significant impact in the lives of vulnerable children and widows. 
+                        <p style={{display:"none"}}>By working together, we can continue to support organizations like Max Care Foundation and make a positive difference in the world. Max Care Foundation has provided educational support to vulnerable children and orphans, ensuring that they have access to quality education, provision of food and nutritional support to widows and vulnerable children, ensuring that they have access to healthy and nutritious meals. This has helped to reduce hunger and malnutrition, thereby improving their health and well-being. Every bit of donations contribute immensely towards achieving these goals.</p>
+                         </p>
+                         <center>
+                         <button className="btn btn_size readmore_btn_2">
+                            Read More
+                         </button>
+                         </center>
+                         <br/>
                     </div>
                     </div>
                 </div>
