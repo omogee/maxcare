@@ -31,7 +31,7 @@ function App() {
          <div style={{width:'10%',padding:"10px"}}><span onClick={()=> setdisplaysearch(prev=> !prev)} className="fa fa-search"></span></div>
     </div>
     <div className="nav_bar" style={{width:"20%",padding:"5px",justifyItems:"center",alignItems:"center"}}>
-    <span onClick={()=>{ setdisplaynav(prev => !prev);seticonclass(iconclass === "fa fa-bars" ? "fa fa-times" : "fa fa-bars")}} className={`${iconclass}`} style={{fontSize:"30px",float:"right",padding:"3px",border:"1px solid lightgrey"}}></span>
+    <span onClick={()=>{ setdisplaynav(prev => !prev);seticonclass(iconclass === "fa fa-bars" ? "fa fa-times" : "fa fa-bars")}} className={`${iconclass}`} style={{fontSize:"30px",cursor:"pointer",float:"right",padding:"3px",border:"1px solid lightgrey"}}><small>expand</small></span>
 </div>
 </div>
 <div style={{position:"relative"}}>
