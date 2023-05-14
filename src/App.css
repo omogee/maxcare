@@ -9,12 +9,36 @@
 .nav_linksection_sm{display:none}
 .nav_bar{display:none}
 .nav_brand{width:13%;height: 80px;}
+.lg_padding{padding:50px}
+.center_text_div{width:50%}
+.lg_size{font-size:30px}
+.md_size{font-size:20px}
+.center_btn{border:2px solid white;color:white;font-weight:bold;font-size:13px;text-transform:uppercase;padding:14px 35px}
+.center_btn:hover{background-color:indianred;border:none;color:white;font-weight:bold;font-size:13px;text-transform:uppercase;padding:14px 35px}
+.btn_size{width:50%}
+.vision_btn{border:2px solid #006080;color:#006080;font-weight:bold;font-size:13px;text-transform:uppercase;padding:14px 35px}
+.vision_btn:hover{background-color:#006080;border:none;color:white;font-weight:bold;font-size:13px;text-transform:uppercase;padding:14px 35px}
+
+.div_threebtn{border:2px solid grey;color:grey;font-weight:bold;font-size:13px;text-transform:uppercase;padding:14px 35px}
+.div_threebtn:hover{background-color:grey;border:none;color:white;font-weight:bold;font-size:13px;text-transform:uppercase;padding:14px 35px}
+/* .rand_btn{border:2px solid #003366;color:#003366;font-weight:bold;font-size:13px;text-transform:uppercase;padding:14px 35px} */
+.rand_btn{border:none;color:white;font-weight:bold;font-size:13px;text-transform:uppercase;padding:14px 35px}
+.last_sect_left{left:25%}
+
+.divwidth_size{width:70%}
 
 @media all and (max-width:900px){
+  .last_sect_left{left:10%}
+  .divwidth_size{width:100%}
+  .btn_size{width:80%}
+  .lg_size{font-size:20px}
+.md_size{font-size:15px}
   .nav_brand{width:20%;height:70px}
+  .lg_padding{padding:5px}
   .nav_bar{display:block}
   .nav_linksection{display:none}
   .nav_linksection_sm{display:block}
+  .center_text_div{width:90%}
  }
 
 @media all and (max-width:600px){

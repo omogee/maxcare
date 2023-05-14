@@ -155,12 +155,12 @@ const setmodal =(e)=>{
         <div>          
             <div className='sliderbox' style={{display:"flex",scrollBehavior:"smooth",overflow:'hidden',width:"100%"}}>
             {images.map(image =>
-            <div className='col-12 slider' style={{width:"100%",opacity:`${opacity}`,transition:"opacity linear 2s",height:'600px',backgroundPosition:"center left",backgroundRepeat:"no-repeat",backgroundSize:"cover",backgroundImage:`url(${image.image})`}}>
-             <div onClick={hello} style={{position:"absolute",padding:"20px",width:"50%",color:`${image.color}`,backgroundColor:"rgba(13,13,13,0.4)",left:"3%",top:"200px",height:"400px"}}>
-                <h3 style={{textTransform:"uppercase",fontWeight:"bolder",fontSize:"40px"}}>HELP THE MOVING TRAIN TO CARE FOR THE VULNERABLES</h3>
-                <p style={{fontSize:"18px",textTransform:"capitalize",fontSize:"30px"}}> Focuses on Widow, Less Priviledge, and Autistic Children to Providing them with essential needs.</p>
-               <br/><br/>
-                <button className='btn' style={{backgroundColor:"indianred",color:"white",fontSize:"13px",textTransform:"uppercase",fontWeight:'bold',padding:"14px 35px"}}>
+            <div className='col-12 slider' style={{width:"100%",opacity:`${opacity}`,transition:"opacity linear 2s",height:'600px',backgroundPosition:"center",backgroundRepeat:"no-repeat",backgroundSize:"cover",backgroundImage:`url(${image.image})`}}>
+             <div className='center_text_div' onClick={hello} style={{position:"absolute",padding:"20px",color:`${image.color}`,backgroundColor:"rgba(13,13,13,0.4)",left:"1%",bottom:"50px"}}>
+                <h3 className='lg_size' style={{textTransform:"uppercase",fontWeight:"bolder"}}>HELP THE MOVING TRAIN TO CARE FOR THE VULNERABLES</h3>
+                <p className='md_size' style={{fontSize:"18px",textTransform:"capitalize"}}> Focuses on Widow, Less Priviledge, and Autistic Children to Providing them with essential needs.</p>
+               <br/>
+                <button className='btn center_btn btn_size'>
                   LEARN MORE
                 </button>
              </div>
@@ -168,7 +168,7 @@ const setmodal =(e)=>{
       )}
       </div>
       <div className='container-fluid' style={{backgroundColor:"rgba(153, 153, 153,0.1)",color:"black",padding:"30px"}}>
-        <div className='row' style={{padding:"30px"}}>
+        <div className='row lg_padding'>
             <div className='col-12 col-md-4' style={{alignItems:"center",justifyContent:"center",alignSelf:"center"}}>
                 <img className='observeY' style={{width:"100%",transform:"translateY(70%)",transition:"all linear 2s",opacity:"0",backgroundColor:"lightblue",borderRadius:"10px",border:"1px solid grey",padding:"5px"}} src={`https://media.istockphoto.com/id/155068480/photo/many-environmentally-aware-hands-gently-supporting-the-earth.jpg?s=612x612&w=0&k=20&c=0uAMQ39R8NnnmbwKZtDmMva0Zv7emtKNCy6Hq65ba8c=`} />
             </div>
@@ -181,16 +181,16 @@ const setmodal =(e)=>{
                     <p>Through our programs and services, we aim to create a community that is inclusive, supportive, and empowering for these groups. We believe that by working together and supporting each other, we can create a better world for all.</p>
                     <br/>
                     <center>
-                        <button className='btn' style={{textTransform:"uppercase",width:"50%",fontWeight:"bold",color:"white",backgroundColor:"#006080"}}>Learn More</button>
+                        <button className='btn btn_size vision_btn'>Learn More</button>
                     </center>
                 </div>
             </div>
         </div>
       </div>
   <div className='container-fluid'>
-    <div style={{width:"100%",padding:"40px"}}>
+    <div className='lg_padding' style={{width:"100%"}}>
         <center>
-            <div style={{width:"70%"}}>
+            <div className='divwidth_size'>
                 <small style={{fontSize:"30px",fontWeight:"bold",letterSpacing:"0.001em",borderBottom:"5px solid lightgrey",textShadow:"2px 2px lightgrey"}}>We Can Collectively elevate children prone to hardship</small>
             <div style={{padding:"50px 0px"}}>
                 <p>
@@ -199,7 +199,7 @@ const setmodal =(e)=>{
                 <p>Many children's lives are being significantly impacted by Max Care Foundation's programs and initiatives, which support them in overcoming hardship and creating better futures for both themselves and their communities.</p>
             </div>
             <div>
-                <button className='btn' style={{textTransform:"uppercase",color:"white",backgroundColor:"orange",fontWeight:"bolder",letterSpacing:"0.001em"}}>
+                <button className='btn div_threebtn' style={{letterSpacing:"0.001em"}}>
                     Learn more about child sponsorship
                 </button>
             </div>
@@ -213,18 +213,18 @@ const setmodal =(e)=>{
                 <img style={{width:"100%"}} src={`https://www.wvi.org/sites/default/files/styles/large_square/public/2019-03/Screen%20Shot%202019-03-25%20at%2010.39.12%20AM.png?itok=zBOMvoUB`}/>
             </div>
             <div className='col-12 col-md-7'>
-             <center style={{padding:"40px"}}>
-             <div style={{width:"80%"}}>
-                <small style={{fontSize:"35px",fontWeight:"bold",padding:"0px"}}>All It Takes</small><br/>
+             <center className='lg_padding'>
+             <div className='divwidth_size'>
+                <small style={{fontSize:"35px",fontWeight:"bold"}}>All It Takes</small><br/>
                 <small style={{color:"green",fontSize:"30px",textTransform:"uppercase",fontWeight:"bolder",padding:"0px",letterSpacing:"0.001em",wordSpacing:"0.0001em"}}> to shape the next generation</small>
-               <div style={{padding:"30px"}}>
+               <div>
                <p>Is simply a will and a drive to rid a child from deprivation and starvation...</p>
                 <p>By simply joining this mission you have helped rid the streets of an helpless child and this in
                     turn would help shape the world to become a better place
                 </p>
                </div>
                <div>
-               <button className='btn' style={{backgroundColor:"green",color:"white",fontSize:"13px",textTransform:"uppercase",fontWeight:'bold',padding:"14px 35px"}}>
+               <button className='btn' style={{backgroundColor:"green",width:"80%",color:"white",fontSize:"13px",textTransform:"uppercase",fontWeight:'bold',padding:"14px 35px"}}>
                   Join our child mentorship 
                 </button>
                </div>
@@ -234,8 +234,8 @@ const setmodal =(e)=>{
         </div>
     </div>
       <div className='container'>
-        <div className='row' style={{padding:"30px"}}>
-            <div className='col-12 col-md-6' style={{padding:"20px"}}>
+        <div className='row lg_padding'>
+            <div className='col-12 col-md-6'>
                 <div className='row'>
                     <div className='col-12'>
                     <div className='observeX' style={{position:"relative",transform:"translateX(-70%)",opacity:"0",transition:"all linear 2s"}}>
@@ -259,7 +259,7 @@ const setmodal =(e)=>{
                     </div>
                 </div>
             </div>
-            <div className='col-12 col-md-6' style={{padding:"20px"}}>
+            <div className='col-12 col-md-6'>
                 <div className='row'>
                     <div className='col-12'>
                         <div className='observeX' style={{position:"relative",transform:"translateX(70%)",opacity:"0",transition:"all linear 2s"}}>
@@ -279,8 +279,8 @@ const setmodal =(e)=>{
             </div>
         </div>
       </div>
-      <div className='container-fluid' style={{backgroundColor:"indianred",color:"white",padding:"30px"}}>
-        <div className='row' style={{padding:"30px"}}>
+      <div className='container-fluid' style={{backgroundColor:"indianred",color:"white"}}>
+        <div className='row lg_padding'>
             <div className='col-12 col-md-8'>
                 <div className='observeY' style={{transform:"translateY(70%)",opacity:"0",transition:"all linear 2s"}}>
                     <p style={{fontWeight:"bold"}}>How To Donate Gifts/Items</p>
@@ -291,7 +291,7 @@ const setmodal =(e)=>{
                     <p>We value your generosity and commitment to our cause. Your gift will have a significant impact on the lives of individuals we assist. We appreciate you working with us to make the world a better place for everyone.</p>
                     <br/>
                     <center>
-                        <button className='btn d-none d-md-block' style={{textTransform:"uppercase",fontWeight:"bold",width:"50%",color:"white",backgroundColor:"#003366"}}>Learn More</button>
+                        <button className='btn d-none d-md-block rand_btn btn_size' style={{backgroundColor:"#003366",color:"white"}}>Learn More</button>
                     </center>
                 </div>
             </div>
@@ -299,14 +299,14 @@ const setmodal =(e)=>{
                 <img className='observeX' style={{width:"100%",transform:"translateX(70%)",opacity:"0",transition:"all linear 2s",backgroundColor:"lightblue",borderRadius:"10px",border:"1px solid grey",padding:"5px"}} src={`https://media.istockphoto.com/id/1283154274/photo/woman-holding-cardboard-donation-box-full-with-folded-clothes.jpg?s=170667a&w=is&k=20&c=2VIK6C6u1OomV_nWqKjZaBrd7MBZwWNPv9S3b7-b34g=`} />
                 <center>
                     <br/><br/>
-                        <button className='btn  d-md-none' style={{textTransform:"uppercase",fontWeight:"bold",width:"50%",color:"white",backgroundColor:"#003366"}}>Learn More</button>
+                        <button className='btn  d-md-none rand_btn btn_size' style={{backgroundColor:"#003366",color:"white"}}>Learn More</button>
                     </center>
             </div>
         </div>
       </div>
   
       <div className='container'>
-        <div className='row' style={{padding:"50px"}}>
+        <div className='row lg_padding'>
             <div className='col-12' style={{padding:"0",margin:"0"}}>
                 <p style={{fontWeight:"lighter",textShadow:"2px 2px indianred",fontSize:"35px",color:"orange"}}>Our Core Values</p>
             </div>
@@ -331,8 +331,8 @@ const setmodal =(e)=>{
            )}
         </div>
       </div>
-      <div className='container-fluid' style={{backgroundColor:"lightblue",padding:"30px"}}>
-        <div className='row' style={{padding:"30px"}}>
+      <div className='container-fluid' style={{backgroundColor:"lightblue"}}>
+        <div className='row lg_padding'>
             <div className='col-12 col-md-4' style={{alignSelf:"center"}}>
                 <img style={{width:"100%",backgroundColor:"indianred",borderRadius:"10px",border:"1px solid grey",padding:"5px"}} src={require(`./cash.jpg`)} />
             </div>
@@ -346,7 +346,7 @@ const setmodal =(e)=>{
                     <p>We value your generosity and commitment to our cause. Your gift will have a significant impact on the lives of individuals we assist. We appreciate you working with us to make the world a better place for everyone.</p>
                     <br/>
                     <center>
-                        <button className='btn' style={{textTransform:"uppercase",fontWeight:"bold",width:"50%",color:"white",backgroundColor:"#003366"}}>Learn More</button>
+                        <button className='btn btn_size rand_btn' style={{color:"white",backgroundColor:"#003366"}}>Learn More</button>
                     </center>
                 </div>
             </div>
@@ -379,8 +379,8 @@ const setmodal =(e)=>{
         <img style={{width:"50%",border:"1px solid lightgrey",padding:"5px"}} src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXyYnvB7_Yv9L1BsdE60WNVKbq2LAc9Um8CA&usqp=CAU`} />
         </div>
             </div>
-            <div className='col-12 col-md-7'>
-                <div style={{justifyContent:"center",alignContent:'center',alignItems:"center",padding:"20px"}}>
+            <div className='col-12 col-md-8 lg_padding'>
+                <div style={{justifyContent:"center",alignContent:'center',alignItems:"center"}}>
                 <p style={{fontWeight:"bold",fontSize:"25px"}}>Fact</p>
                 <p>Malnutrition is a significant problem for children living in poverty. According to the World Health Organization (WHO), an estimated 149 million children under the age of five are stunted due to chronic malnutrition.
                 </p>
@@ -415,13 +415,13 @@ const setmodal =(e)=>{
             </div>
             <div className='col-12 col-lg-6' style={{padding:"0",margin:"0",backgroundColor:"#006bb3",width:'100%',height:"500px"}}>
       <center>
-        <div style={{width:"80%",padding:"10px"}}>
+        <div className='divwidth_size' style={{padding:"10px"}}>
         <h1 style={{color:"white",fontStyle:"italic",fontSize:"35px",fontWeight:"bold",padding:"20px"}}>
         Collectively we've been able to alleviate poverty among over 200 million children using different methods to mitigate the effect.
               </h1>
               <br/>
               <div>
-              <button className='btn' style={{border:"2px solid white",color:"white",fontSize:"13px",textTransform:"uppercase",fontWeight:'bold',width:"50%",padding:"10px 45px"}}>
+              <button className='btn btn_size last_sect_left' style={{border:"2px solid white",color:"white",fontSize:"13px",position:"absolute",bottom:"20px",textTransform:"uppercase",fontWeight:'bold',padding:"10px 45px"}}>
                   LEARN MORE
                 </button>
               </div>
