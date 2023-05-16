@@ -19,9 +19,9 @@ function App() {
   return (
     <div onMouseLeave={()=>hoverlink(-1)} className="App" style={{position:"fixed",width:"100%",top:"0px",zIndex:"30"}} >
 <div style={{backgroundColor:"white"}}>
-<div style={{display:"flex",borderBottom:"1px solid lightgrey",justifyContent:'space-between',padding:"0",margin:"0"}}>
+<div style={{display:"flex",borderBottom:"0",justifyContent:'space-between',padding:"0",margin:"0"}}>
     <div className="nav_brand" style={{padding:"10px"}}>
-        <img style={{width:'100%',height:"100%"}} src={require(`./logo.png`)} />
+        <img style={{position:"absolute",width:"10%",zIndex:"87686"}} src={require(`./logo.png`)} />
     </div>
     <div className="nav_linksection"  style={{width:"55%",alignItems:"center",alignContent:'center',justifyContent:"space-evenly"}}>
        {navlinks.map(navlink =>

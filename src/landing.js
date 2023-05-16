@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import cryingbaby from "./cryingbaby.jpg"
 import groupchildren from "./groupchildren.jpg"
 import womancrying from "./womancrying.jpeg"
+import logo from "./logo.png"
 import "./App.css"
 
 function Landing() {
@@ -11,18 +12,18 @@ function Landing() {
     const [slidedirection, setslidedirection] = useState("forward")
     const [opacity, setopacity]= useState("1")
     const [corevalues, setcorevalues] = useState(
-        [{id:1,value:"intergrity",extend:`Max Care Foundation focuses on integrity as a core value thereby placing a high value on honesty, transparency, and ethical behavior...`,
-        full_extend:`Max Care Foundation focuses on integrity as a core value thereby placing a high value on honesty, transparency, and ethical behavior in all of its actions and decisions. Through proper feeding and empowerment, children and widow accomplish their life aspirations.`
-        },{id:2,value:"Charity",extend:`Max Care Foundation focuses on integrity as a core value thereby placing a high value on honesty, transparency, and ethical behavior...`,
-        full_extend:`Max Care Foundation focuses on integrity as a core value thereby placing a high value on honesty, transparency, and ethical behavior in all of its actions and decisions. Through proper feeding and empowerment, children and widow accomplish their life aspirations.`
-        },{id:3,value:"Hospitality",extend:`Max Care Foundation focuses on integrity as a core value thereby placing a high value on honesty, transparency, and ethical behavior...`,
-        full_extend:`Max Care Foundation focuses on integrity as a core value thereby placing a high value on honesty, transparency, and ethical behavior in all of its actions and decisions. Through proper feeding and empowerment, children and widow accomplish their life aspirations.`
-        },{id:4,value:"Humanitarianism",extend:`Max Care Foundation focuses on integrity as a core value thereby placing a high value on honesty, transparency, and ethical behavior...`,
-        full_extend:`Max Care Foundation focuses on integrity as a core value thereby placing a high value on honesty, transparency, and ethical behavior in all of its actions and decisions. Through proper feeding and empowerment, children and widow accomplish their life aspirations.`
-        },{id:5,value:"Willfulness",extend:`Max Care Foundation focuses on integrity as a core value thereby placing a high value on honesty, transparency, and ethical behavior...`,
-        full_extend:`Max Care Foundation focuses on integrity as a core value thereby placing a high value on honesty, transparency, and ethical behavior in all of its actions and decisions. Through proper feeding and empowerment, children and widow accomplish their life aspirations.`
-        },{id:6,value:"Comitment",extend:`Max Care Foundation focuses on integrity as a core value thereby placing a high value on honesty, transparency, and ethical behavior...`,
-        full_extend:`Max Care Foundation focuses on integrity as a core value thereby placing a high value on honesty, transparency, and ethical behavior in all of its actions and decisions. Through proper feeding and empowerment, children and widow accomplish their life aspirations.`
+        [{id:1,value:"intergrity",extend:`Maxi Care Foundation focuses on integrity as a core value thereby placing a high value on honesty, transparency, and ethical behavior...`,
+        full_extend:`Maxi Care Foundation focuses on integrity as a core value thereby placing a high value on honesty, transparency, and ethical behavior in all of its actions and decisions. Through proper feeding and empowerment, children and widow accomplish their life aspirations.`
+        },{id:2,value:"Charity",extend:`Through monetary donations, volunteering time and resources, and offering a helping hand...`,
+        full_extend:`Through monetary donations, volunteering time and resources, and offering a helping hand. We prioritize showing kindness and generosity to others, without expecting anything in return.        `
+        },{id:3,value:"Hospitality",extend:`We welcome and accommodate widow and children vulnerable to poverty , and making them feel comfortable and ...`,
+        full_extend:`We welcome and accommodate widow and children vulnerable to poverty , and making them feel comfortable and at home. We create an atmosphere of warmth, friendliness, and generosity towards them.`
+        },{id:4,value:"Humanitarianism",extend:`Maxi Care Foundation belief in the value and dignity of all human beings, and the commitment to promoting their welfare and alleviating suffering. We recognize ...`,
+        full_extend:`Maxi Care Foundation belief in the value and dignity of all human beings, and the commitment to promoting their welfare and alleviating suffering. We recognize and respond to the needs of people, particularly those who are vulnerable, marginalized, or oppressed.`
+        },{id:5,value:"Dedication",extend:`We are committed and persistence to achieving our goals and fulfilling our responsibilities. We put  time, effort...`,
+        full_extend:`We are committed and persistence to achieving our goals and fulfilling our responsibilities. We put  time, effort, and focus necessary to make a positive impact and achieve meaningful results.        `
+        },{id:6,value:"Willfulness",extend:`Maxi Care Foundation, we possess the determination and strength of character required to overcome obstacles and pursue...`,
+        full_extend:`Maxi Care Foundation, we possess the determination and strength of character required to overcome obstacles and pursue our goals. With strong courage and resilience to face challenges and persevere in the face of adversity.`
         }])
 
     const [imgtimer, setimagetimer] = useState(0)
@@ -174,7 +175,7 @@ const setmodal =(e)=>{
             </div>
             <div className='col-12 col-md-8'>
                 <div className='observeX' style={{transform:"translateX(70%)",opacity:"0",transition:"all linear 2s"}}>
-                    <p style={{fontSize:"25px",color:"indianred",textShadow:"2px 2px lightblue"}}>Our Vision</p>
+                    <p style={{fontSize:"25px",color:"indianred",fontWeight:"bold"}}>Our Vision</p>
                     <p>The vision is to create a world where widows, autistic children, and the less privileged are empowered to lead fulfilling lives and have access to basic needs and essential services. We envision a society that values and supports these groups, and where they are not marginalized or discriminated against based on their circumstances.
                     </p>
                     <p>We strive to create a future where every widow has the support and resources they need to navigate their grief and rebuild their life, where every autistic child has access to education and support to reach their full potential, and where every less privileged person can meet their basic needs and achieve financial stability.</p>
@@ -194,9 +195,9 @@ const setmodal =(e)=>{
                 <small style={{fontSize:"30px",fontWeight:"bold",letterSpacing:"0.001em",borderBottom:"5px solid lightgrey",textShadow:"2px 2px lightgrey"}}>We Can Collectively elevate children prone to hardship</small>
             <div style={{padding:"50px 0px"}}>
                 <p>
-                The Max Care Foundation is aware of the multiple difficulties and obstacles that vulnerable children must overcome to develop and succeed. To help these kids reach their full potential and realize their aspirations, the foundation focuses on establishing a nurturing and empowering atmosphere for them.
+                The Maxi Care Foundation is aware of the multiple difficulties and obstacles that vulnerable children must overcome to develop and succeed. To help these kids reach their full potential and realize their aspirations, the foundation focuses on establishing a nurturing and empowering atmosphere for them.
                 </p>
-                <p>Many children's lives are being significantly impacted by Max Care Foundation's programs and initiatives, which support them in overcoming hardship and creating better futures for both themselves and their communities.</p>
+                <p>Many children's lives are being significantly impacted by Maxi Care Foundation's programs and initiatives, which support them in overcoming hardship and creating better futures for both themselves and their communities.</p>
             </div>
             <div>
                 <button className='btn div_threebtn' style={{letterSpacing:"0.001em"}}>
@@ -248,8 +249,8 @@ const setmodal =(e)=>{
                      </div>
                      <div className='observeY' style={{transform:"translateY(-70%)",opacity:"0",transition:"all linear 2s"}}>
                       <p style={{fontSize:"25px",color:"orange",fontWeight:"bold",padding:"10px",textTransform:"uppercase"}}>What We Have Achieved...</p>
-                    <p >As a result of monthly donations and giving, Max Care Foundation has achieved a lot through the support of donors. Through the support of donors who have committed to monthly donations and giving, Max Care Foundation has been able to make a significant impact in the lives of vulnerable children and widows. 
-                        <p style={{display:"none"}}>By working together, we can continue to support organizations like Max Care Foundation and make a positive difference in the world. Max Care Foundation has provided educational support to vulnerable children and orphans, ensuring that they have access to quality education, provision of food and nutritional support to widows and vulnerable children, ensuring that they have access to healthy and nutritious meals. This has helped to reduce hunger and malnutrition, thereby improving their health and well-being. Every bit of donations contribute immensely towards achieving these goals.
+                    <p >As a result of monthly donations and giving, Maxi Care Foundation has achieved a lot through the support of donors. Through the support of donors who have committed to monthly donations and giving, Maxi Care Foundation has been able to make a significant impact in the lives of vulnerable children and widows. 
+                        <p style={{display:"none"}}>By working together, we can continue to support organizations like Maxi Care Foundation and make a positive difference in the world. Maxi Care Foundation has provided educational support to vulnerable children and orphans, ensuring that they have access to quality education, provision of food and nutritional support to widows and vulnerable children, ensuring that they have access to healthy and nutritious meals. This has helped to reduce hunger and malnutrition, thereby improving their health and well-being. Every bit of donations contribute immensely towards achieving these goals.
                          hunger. Each dollar of your gift will provide food and life essentials for
                          vulnerable children and families every month of the year.
                          Monthly giving is the most effective and efficient way to partner in the fight against
@@ -279,8 +280,8 @@ const setmodal =(e)=>{
                         </div>
                         <div className='observeY' style={{transform:"translateY(-70%)",opacity:"0",transition:"all linear 2s"}}>
                         <p style={{fontSize:"25px",color:"orange",padding:"10px",textTransform:"uppercase",fontWeight:"bold"}}>What keeps us going</p>
-                    <p>As a result of monthly donations and giving, Max Care Foundation has achieved a lot through the support of donors. Through the support of donors who have committed to monthly donations and giving, Max Care Foundation has been able to make a significant impact in the lives of vulnerable children and widows. 
-                        <p style={{display:"none"}}>By working together, we can continue to support organizations like Max Care Foundation and make a positive difference in the world. Max Care Foundation has provided educational support to vulnerable children and orphans, ensuring that they have access to quality education, provision of food and nutritional support to widows and vulnerable children, ensuring that they have access to healthy and nutritious meals. This has helped to reduce hunger and malnutrition, thereby improving their health and well-being. Every bit of donations contribute immensely towards achieving these goals.</p>
+                    <p>As a result of monthly donations and giving, Maxi Care Foundation has achieved a lot through the support of donors. Through the support of donors who have committed to monthly donations and giving, Maxi Care Foundation has been able to make a significant impact in the lives of vulnerable children and widows. 
+                        <p style={{display:"none"}}>By working together, we can continue to support organizations like Maxi Care Foundation and make a positive difference in the world. Maxi Care Foundation has provided educational support to vulnerable children and orphans, ensuring that they have access to quality education, provision of food and nutritional support to widows and vulnerable children, ensuring that they have access to healthy and nutritious meals. This has helped to reduce hunger and malnutrition, thereby improving their health and well-being. Every bit of donations contribute immensely towards achieving these goals.</p>
                          </p>
                          <center>
                          <button className="btn btn_size readmore_btn_2">
@@ -294,7 +295,7 @@ const setmodal =(e)=>{
             </div>
         </div>
       </div>
-      <div className='container-fluid' style={{backgroundColor:"indianred",color:"white"}}>
+      <div className='container-fluid' style={{backgroundColor:"lightblue"}}>
         <div className='row lg_padding'>
             <div className='col-12 col-md-8'>
                 <div className='observeY' style={{transform:"translateY(70%)",opacity:"0",transition:"all linear 2s"}}>
@@ -323,13 +324,13 @@ const setmodal =(e)=>{
       <div className='container'>
         <div className='row lg_padding'>
             <div className='col-12' style={{padding:"0",margin:"0"}}>
-                <p style={{fontWeight:"lighter",textShadow:"2px 2px indianred",fontSize:"35px",color:"orange"}}>Our Core Values</p>
+                <p style={{fontWeight:"bold",fontSize:"35px",color:"#006080"}}>Our Core Values</p>
             </div>
         
             {corevalues.map(corevalue =>
                
-            <div className='col-12 col-md-4' key={corevalue.id} style={{border:"1px solid lightgrey",position:"relative",padding:"20px 10px"}}>
-               <div className='full_extend' style={{position:"absolute",transition:"opacity linear 2s",padding:"20px",color:"white",top:"0",left:"0",width:"100%",height:"100%",backgroundColor:"rgb(13, 13, 13,0.6)"}}>
+            <div className='col-12 col-md-4 outside_full_extend' key={corevalue.id} style={{border:"1px solid lightgrey",position:"relative",padding:"20px 10px"}}>
+               <div className='full_extend' style={{position:"absolute",transition:"opacity linear 2s",padding:"20px",color:"white",top:"0",left:"0",width:"100%",height:"100%",backgroundColor:"rgb(0, 107, 179,0.8)"}}>
                 <h2>{corevalue.value}</h2>
                 <p>
              {corevalue.full_extend}
@@ -338,8 +339,10 @@ const setmodal =(e)=>{
                 <center>
                     <div  style={{width:"80%"}}>
  <img src={`https://www.feedthechildren.org/images/our-work/Food-Icon.png`} />
- <p>{corevalue.value}</p>
+<div className='extend'>
+<p>{corevalue.value}</p>
  <p>{corevalue.extend}</p>
+</div>
 </div>
  </center>
             </div>
@@ -353,7 +356,7 @@ const setmodal =(e)=>{
             </div>
             <div className='col-12 col-md-8'>
                 <div>
-                    <p>How To Make Cash Donations</p>
+                    <p style={{fontWeight:"bold"}}>How To Make Cash Donations</p>
                     <p>MWe appreciate your desire to help the MaxiCare Foundation. Your gift will enable us to offer crucial assistance and support to widows, autistic kids, and the less fortunate members of our community.
                     </p>
                     <p>Please visit our website and select the <b>"Donate"</b> option to make an online donation. After entering your information, you will be taken to a secure payment page where you can use your credit card or PayPal account to make a donation.</p>
@@ -450,10 +453,8 @@ const setmodal =(e)=>{
           <div className='shopcartdeldiv' style={{position:"fixed",fontWeight:"bold",backgroundColor:"white",boxShadow:"2px 2px 3px 2px lightgrey",padding:"30px",zIndex:"999900"}}>
            <span style={{float:"right",fontWeight:"lighter",color:"grey",fontSize:"25px"}} onClick={()=>setdisplaymodal(false)} className='fa fa-times'></span>
             <center>
-
               <h5 style={{fontWeight:"lighter"}}>{modaldetails}</h5>
-              <br/>
-             
+              <br/>            
               <p style={{fontWeight:"lighter",color:"grey"}}>{modaldetails} Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
                                  Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the</p>
             </center>
@@ -599,6 +600,67 @@ const setmodal =(e)=>{
             </div>
           </div>
         </div>
+        <div className='container'>
+            <div className='row lg_padding'>
+                <div className='col-12 col-md-4' style={{justifySelf:"center", justifyContent:"center",justifyItems:"center"}}>
+                    <img style={{width:"100%",justifySelf:"center",border:"10px solid #006bb3", justifyContent:"center",justifyItems:"center"}} src={`https://media.istockphoto.com/id/1193290387/photo/portrait-of-young-businessman-standing-in-his-office-with-arms-crossed.jpg?s=612x612&w=0&k=20&c=DdgYzd4WTTtlhKMM2dBqUxSxobWs7MC-rZZxflyF6oY=`} />
+                </div>
+         
+         <div className='col-12 col-md-8'>
+         <div className='mt-2' style={{width:"100%"}}>
+        <center>
+            <div className='divwidth_size'>
+                <small style={{fontSize:"30px",fontWeight:"bold",letterSpacing:"0.001em",borderBottom:"5px solid #006bb3"}}>My Success Story</small>
+            <div style={{padding:"5px 0px"}}>
+                <p>
+                The Maxi Care Foundation is aware of the multiple difficulties and obstacles that vulnerable children must overcome to develop and succeed. To help these kids reach their full potential and realize their aspirations, the foundation focuses on establishing a nurturing and empowering atmosphere for them.
+                </p>
+            </div>
+            <div>
+                <button className='btn div_threebtn' style={{letterSpacing:"0.001em"}}>
+                    READ MORE
+                </button>
+            </div>
+            </div>
+        </center>
+    </div>
+         </div>
+        </div>
+        </div>
+        {/* backgroundColor:"#006bb3" */}
+     <div className='container-fluid' style={{backgroundImage:`url(${logo})`,backgroundColor:"rgb(0, 102, 153,0.7)",backgroundRepeat:"no-repeat",backgroundPosition:"center"}}>
+     <div className='row' style={{ width:"100%"}}>
+        <div className='col-12 col-lg-2 d-none'>
+            <center>
+                <img style={{width:"100%",height:"150px"}} src={require(`./logo.png`)} />
+            </center>
+        </div>
+            <div className=' col-12' style={{color:"white"}}> 
+          <center>
+            <small style={{fontSize:"30px",fontWeight:"bold"}}>Maxi Care Foundations</small><br/>
+            <b>No 30,</b> new jersey tink tank street off abeokuta,<br/>
+            <small>Plot 99 close,</small><br/>
+            <small>Newyork, America.</small><br/>
+            <span className='fa fa-envelope'></span><span style={{color:"lightgrey",textDecoration:"underline"}}> @maxicarefoundations@gmail.com, @maxihelp@yahoo.com</span><br/>
+            <span className='fa fa-phone'></span> <b>+131 4536 5363 52637, +131 5236 5262 8393</b>
+         <br/><br/>
+         <div style={{display:"flex",marginBottom:"50px",justifyContent:"center", color:"white"}}>
+                    <div style={{padding:"10px"}}><span className='fa fa-facebook' style={{fontSize:"20px",padding:"5px 10px",borderRadius:"50%",border:"1px solid lightgrey"}}></span></div>
+                    <div style={{padding:"10px"}}><span className='fa fa-twitter' style={{fontSize:"20px",padding:"5px 7px",borderRadius:"50%",border:"1px solid lightgrey"}}></span></div>
+                    <div style={{padding:"10px"}}><span className='fa fa-whatsapp' style={{fontSize:"20px",padding:"5px 10px",borderRadius:"50%",border:"1px solid lightgrey"}}></span></div>
+                    <div style={{padding:"10px"}}><span className='fa fa-linkedin' style={{fontSize:"20px",padding:"5px 7px",borderRadius:"50%",border:"1px solid lightgrey"}}></span></div>
+                    <div style={{padding:"10px"}}><span className='fa fa-instagram' style={{fontSize:"20px",padding:"5px 10px",borderRadius:"50%",border:"1px solid lightgrey"}}></span></div>
+                </div>
+          </center>
+            </div>
+            <br/><br/>
+            <div className='col-12'>
+                <center  style={{color:"white",position:"absolute",zIndex:"689836",bottom:"0px",padding:"5px"}}>
+                    <span className='fa fa-copyright'></span> <span className='fa fa-envelope'></span>ezeogbonnayajnr@gmail.com
+                </center>
+            </div>
+        </div>
+     </div>
         </div>
      );
 }

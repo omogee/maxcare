@@ -6,11 +6,12 @@
 .nav_sublinks{color:white;}
 .nav_sublinks:hover{color:black;font-weight:bold;background-color: white;}
 .full_extend{opacity:0}
-.full_extend:hover{opacity: 1;}
+.outside_full_extend:hover .full_extend{opacity: 1;}
+.outside_full_extend:hover .extend{opacity: 0;}
 .nav_linksection{display:flex}
 .nav_linksection_sm{display:none}
 .nav_bar{display:none}
-.nav_brand{width:13%;height: 80px;}
+.nav_brand{width:15%;}
 .lg_padding{padding:50px}
 .center_text_div{width:50%}
 .lg_size{font-size:30px}
