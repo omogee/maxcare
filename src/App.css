@@ -1,8 +1,11 @@
 
-*{font-family: 'Open Sans', sans-serif;
+.topnav{font-family: 'Open Sans', sans-serif;
   font-family: 'Oswald', sans-serif;}
-.App{font-family: 'Open Sans', sans-serif;color:black}
-.nav_link:hover{color:indianred;transition: color linear 2s;}
+/*{font-family: 'Open Sans', sans-serif;color:black} */
+.body_text{font-family: 'Open Sans', sans-serif;font-weight: bold;}
+.header_text{font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;}
+.nav_link:hover{color:#006080;transition: color linear 2s;}
 .nav_sublinks{color:white;}
 .nav_sublinks:hover{color:black;font-weight:bold;background-color: white;}
 .full_extend{opacity:0}
@@ -11,13 +14,13 @@
 .nav_linksection{display:flex}
 .nav_linksection_sm{display:none}
 .nav_bar{display:none}
-.nav_brand{width:15%;}
+.nav_brand{width:10%;}
 .lg_padding{padding:50px}
 .center_text_div{width:50%}
 .lg_size{font-size:30px}
 .md_size{font-size:20px}
 .center_btn{border:2px solid white;color:white;font-weight:bold;font-size:13px;text-transform:uppercase;padding:14px 35px}
-.center_btn:hover{background-color:indianred;border:none;color:white;font-weight:bold;font-size:13px;text-transform:uppercase;padding:14px 35px}
+.center_btn:hover{background-color:#006080;border:none;color:white;font-weight:bold;font-size:13px;text-transform:uppercase;padding:14px 35px}
 .btn_size{width:50%}
 .vision_btn{border:2px solid #006080;color:#006080;font-weight:bold;font-size:13px;text-transform:uppercase;padding:14px 35px}
 .vision_btn:hover{background-color:#006080;border:none;color:white;font-weight:bold;font-size:13px;text-transform:uppercase;padding:14px 35px}
@@ -34,13 +37,14 @@
 .readmorediv_2:hover .readmorebtn_2{background-color:orange;border:none;color:white;font-weight:bold;font-size:13px;text-transform:uppercase;padding:10px 35px}
 .divwidth_size{width:70%}
 .container,.container-fluid{padding-top:50px;padding-bottom: 50px;}
+#about_us{margin-top:100px}
 @media all and (max-width:900px){
   .last_sect_left{left:10%}
   .divwidth_size{width:100%}
   .btn_size{width:80%}
   .lg_size{font-size:20px}
 .md_size{font-size:15px}
-  .nav_brand{width:20%;height:70px}
+  .nav_brand{width:18%;}
   .lg_padding{padding:5px}
   .nav_bar{display:block}
   .nav_linksection{display:none}
@@ -49,5 +53,5 @@
  }
 
 @media all and (max-width:600px){
- .nav_brand{width:20%;height:70px}
+ .nav_brand{width:20%;}
 }

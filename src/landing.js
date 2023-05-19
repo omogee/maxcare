@@ -152,13 +152,14 @@ const setmodal =(e)=>{
            sliderbox.scrollLeft += slider.clientWidth
        
     }
+   
     return ( 
-        <div>          
+        <div className='landing'>          
             <div className='sliderbox' style={{display:"flex",scrollBehavior:"smooth",overflow:'hidden',width:"100%"}}>
             {images.map(image =>
             <div className='col-12 slider' style={{width:"100%",opacity:`${opacity}`,transition:"opacity linear 2s",height:'600px',backgroundPosition:"center",backgroundRepeat:"no-repeat",backgroundSize:"cover",backgroundImage:`url(${image.image})`}}>
              <div className='center_text_div' onClick={hello} style={{position:"absolute",padding:"20px",color:`${image.color}`,backgroundColor:"rgba(13,13,13,0.4)",left:"1%",bottom:"50px"}}>
-                <h3 className='lg_size' style={{textTransform:"uppercase",fontWeight:"bolder"}}>HELP THE MOVING TRAIN TO CARE FOR THE VULNERABLES</h3>
+                <h3 className='lg_size header_text' style={{textTransform:"uppercase",fontWeight:"bolder"}}>HELP THE MOVING TRAIN TO CARE FOR THE VULNERABLES</h3>
                 <p className='md_size' style={{fontSize:"18px",textTransform:"capitalize"}}> Focuses on Widow, Less Priviledge, and Autistic Children to Providing them with essential needs.</p>
                <br/>
                 <button className='btn center_btn btn_size'>
@@ -175,7 +176,7 @@ const setmodal =(e)=>{
             </div>
             <div className='col-12 col-md-8'>
                 <div className='observeX' style={{transform:"translateX(70%)",opacity:"0",transition:"all linear 2s"}}>
-                    <p style={{fontSize:"25px",color:"indianred",fontWeight:"bold"}}>Our Vision</p>
+                    <p className='header_text' style={{fontSize:"25px",color:"indianred",fontWeight:"bold"}}>Our Vision</p>
                     <p>The vision is to create a world where widows, autistic children, and the less privileged are empowered to lead fulfilling lives and have access to basic needs and essential services. We envision a society that values and supports these groups, and where they are not marginalized or discriminated against based on their circumstances.
                     </p>
                     <p>We strive to create a future where every widow has the support and resources they need to navigate their grief and rebuild their life, where every autistic child has access to education and support to reach their full potential, and where every less privileged person can meet their basic needs and achieve financial stability.</p>
@@ -192,7 +193,7 @@ const setmodal =(e)=>{
     <div className='lg_padding' style={{width:"100%"}}>
         <center>
             <div className='divwidth_size'>
-                <small style={{fontSize:"30px",fontWeight:"bold",letterSpacing:"0.001em",borderBottom:"5px solid lightgrey",textShadow:"2px 2px lightgrey"}}>We Can Collectively elevate children prone to hardship</small>
+                <small className='header_text' style={{fontSize:"30px",fontWeight:"bold",letterSpacing:"0.001em",borderBottom:"5px solid lightgrey",textShadow:"2px 2px lightgrey"}}>We Can Collectively elevate children prone to hardship</small>
             <div style={{padding:"50px 0px"}}>
                 <p>
                 The Maxi Care Foundation is aware of the multiple difficulties and obstacles that vulnerable children must overcome to develop and succeed. To help these kids reach their full potential and realize their aspirations, the foundation focuses on establishing a nurturing and empowering atmosphere for them.
@@ -216,10 +217,10 @@ const setmodal =(e)=>{
             <div className='col-12 col-md-7'>
              <center className='lg_padding'>
              <div className='divwidth_size'>
-                <small style={{fontSize:"35px",fontWeight:"bold"}}>All It Takes</small><br/>
-                <small style={{color:"green",fontSize:"30px",textTransform:"uppercase",fontWeight:"bolder",padding:"0px",letterSpacing:"0.001em",wordSpacing:"0.0001em"}}> to shape the next generation</small>
+                <small className='header_text' style={{fontSize:"35px",fontWeight:"bold"}}>All It Takes</small><br/>
+                <small className='header_text' style={{color:"green",fontWeight:"lighter",fontSize:"30px",textTransform:"uppercase",fontWeight:"bolder",padding:"0px",letterSpacing:"0.001em",wordSpacing:"0.0001em"}}> to shape the next generation</small>
                <div>
-               <p>Is simply a will and a drive to rid a child from deprivation and starvation...</p>
+               <p className='body_text'>Is simply a will and a drive to rid a child from deprivation and starvation...</p>
                 <p>By simply joining this mission you have helped rid the streets of an helpless child and this in
                     turn would help shape the world to become a better place
                 </p>
@@ -299,7 +300,7 @@ const setmodal =(e)=>{
         <div className='row lg_padding'>
             <div className='col-12 col-md-8'>
                 <div className='observeY' style={{transform:"translateY(70%)",opacity:"0",transition:"all linear 2s"}}>
-                    <p style={{fontWeight:"bold"}}>How To Donate Gifts/Items</p>
+                    <p className='header_text' style={{fontWeight:"bold"}}>How To Donate Gifts/Items</p>
                     <p>We appreciate your desire to help the MaxiCare Foundation. Your gift will enable us to offer crucial assistance and support to widows, autistic kids, and the less fortunate members of our community.
                     </p>
                     <p>Please visit our website and select the "Donate" option to make an online donation. After entering your information, you will be taken to a secure payment page where you can use your credit card or PayPal account to make a donation.</p>
@@ -320,11 +321,36 @@ const setmodal =(e)=>{
             </div>
         </div>
       </div>
-  
+        <div className='container' >
+            <div className='row' style={{position:"relative"}} >
+                <div className='col-12'  style={{position:"relative"}}>
+                    <center>
+                        <h1 className='header_text' id="about_us">About us</h1>
+                        <p>Check Out Some Successful Blog Examples. Learn How You Can Implement Their Methods. See What it Takes to Create a Professional Blog and to Add Outstanding Blog Elements. Social media compatible. SEO Setup Checklist. Free multilingua</p>
+                        <p>Check Out Some Successful Blog Examples. Learn How You Can Implement Their Methods. See What it Takes to Create a Professional Blog and to Add Outstanding Blog Elements. Social media compatible. SEO Setup Checklist. Free multilingua
+                        Check Out Some Successful Blog Examples. Learn How You Can Implement Their Methods. See What it Takes to Create a Professional Blog and to Add Outstanding Blog Elements. Social media compatible. SEO Setup Checklist. Free multilingua
+                        </p>
+                        <p>Check Out Some Successful Blog Examples. Learn How You Can Implement Their Methods. See What it Takes to Create a Professional Blog and to Add Outstanding Blog Elements. Social media compatible. SEO Setup Checklist. Free multilingua
+                        Check Out Some Successful Blog Examples. Learn How You Can Implement Their Methods. See What it Takes to Create a Professional Blog and to Add Outstanding Blog Elements. Social media compatible. SEO Setup Checklist. Free multilingua
+                        Check Out Some Successful Blog Examples. Learn How You Can Implement Their Methods. See What it Takes to Create a Professional Blog and to Add Outstanding Blog Elements. Social media compatible. SEO Setup Checklist. Free multilingua
+                        Check Out Some Successful Blog Examples. Learn How You Can Implement Their Methods. See What it Takes to Create a Professional Blog and to Add Outstanding Blog Elements. Social media compatible. SEO Setup Checklist. Free multilingua
+                        Check Out Some Successful Blog Examples. Learn How You Can Implement Their Methods. See What it Takes to Create a Professional Blog and to Add Outstanding Blog Elements. Social media compatible. SEO Setup Checklist. Free multilingua
+                        Check Out Some Successful Blog Examples. Learn How You Can Implement Their Methods. See What it Takes to Create a Professional Blog and to Add Outstanding Blog Elements. Social media compatible. SEO Setup Checklist. Free multilingua
+                        </p>
+                        <p>Check Out Some Successful Blog Examples. Learn How You Can Implement Their Methods. See What it Takes to Create a Professional Blog and to Add Outstanding Blog Elements. Social media compatible. SEO Setup Checklist. Free multilingua</p>
+                    </center>
+                </div>
+               <center style={{width:"100%",position:"absolute",zIndex:"-1"}}>
+               <div className="col-6">
+                    <img src={require('./logo.png')} style={{width:"100%", opacity:"0.1"}} />
+                </div>
+               </center>
+            </div>
+        </div>
       <div className='container'>
         <div className='row lg_padding'>
             <div className='col-12' style={{padding:"0",margin:"0"}}>
-                <p style={{fontWeight:"bold",fontSize:"35px",color:"#006080"}}>Our Core Values</p>
+                <p className='header_text' style={{fontWeight:"bold",fontSize:"35px",color:"#006080"}}>Our Core Values</p>
             </div>
         
             {corevalues.map(corevalue =>
@@ -356,7 +382,7 @@ const setmodal =(e)=>{
             </div>
             <div className='col-12 col-md-8'>
                 <div>
-                    <p style={{fontWeight:"bold"}}>How To Make Cash Donations</p>
+                    <p className='header_text' style={{fontWeight:"bold"}}>How To Make Cash Donations</p>
                     <p>MWe appreciate your desire to help the MaxiCare Foundation. Your gift will enable us to offer crucial assistance and support to widows, autistic kids, and the less fortunate members of our community.
                     </p>
                     <p>Please visit our website and select the <b>"Donate"</b> option to make an online donation. After entering your information, you will be taken to a secure payment page where you can use your credit card or PayPal account to make a donation.</p>
@@ -628,7 +654,7 @@ const setmodal =(e)=>{
         </div>
         </div>
         {/* backgroundColor:"#006bb3" */}
-     <div className='container-fluid' style={{backgroundImage:`url(${logo})`,backgroundColor:"rgb(0, 102, 153,0.7)",backgroundRepeat:"no-repeat",backgroundPosition:"center"}}>
+     <div className='container-fluid' style={{backgroundImage:`url(${logo})`,backgroundColor:"rgb(0, 102, 153,0.9)",backgroundRepeat:"no-repeat",backgroundPosition:"center"}}>
      <div className='row' style={{ width:"100%"}}>
         <div className='col-12 col-lg-2 d-none'>
             <center>
